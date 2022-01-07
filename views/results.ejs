@@ -1,0 +1,9 @@
+<h1>Results Page</h1>
+<ul>
+    <% datav.Search.forEach(function(movie){ %>
+        <li>
+            <strong><%= movie.Title %></strong> - <Strong><%= movie.Year %></Strong>
+        </li>
+    <% }) ;%>
+</ul>
+<a href="/search">Search a Movie</a> 
