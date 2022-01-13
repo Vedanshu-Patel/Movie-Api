@@ -9,7 +9,7 @@ app.get("/search", function(req, res) {
 
 app.get("/results", function(req, res){
     let s=req.query.x;
-    let url ="https://www.omdbapi.com/?apikey=31558f&s=" + s;
+    let url ="https://www.omdbapi.com/?apikey=[]&s=" + s;
     request(url,function(error, response,body){
     if(!error && response.statusCode==200){
         let parsedData=JSON.parse(body);
